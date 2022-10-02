@@ -16,7 +16,7 @@ function draw(words) {
     .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
     .selectAll("text")
     .data(words)
-    .enter().append("a").attr("href", function(d) { return "./test"; })
+    .enter().append("a").attr("href", function(d) { return "./test.html"; })
     .append("text")
     .style("font-size", function(d) { return d.size + "px"; })
     .style("font-family", "Impact")
