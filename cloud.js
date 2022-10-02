@@ -55,7 +55,7 @@ for (var i = 0; i < checkboxes.length; i++) {
       }
     } else {
       window.localStorage.setItem(filterType, window.localStorage.getItem(filterType).replace(event.target.id, ""));
-      localStorage.setItem(filterType, localStorage.getItem(filterType).replace(/,{2,}/, ""));
+      localStorage.setItem(filterType, localStorage.getItem(filterType).replace(/,{2,}/, ","));
     }
   });
 }
