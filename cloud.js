@@ -48,9 +48,9 @@ for (var i = 0; i < checkboxes.length; i++) {
   checkboxes[i].addEventListener("click", function(event) {
     var filterType = event.target.parentElement.parentElement.className;
     if (window.localStorage.key(filterType) === null) {
-      window.localStorage.setItem(filterType, window.localStorage.getItem(filterType) + "," + event.target.id);
+      window.localStorage.setItem(filterType, event.target.id);
     } else {
-        window.localStorage.setItem(filterType, event.target.id)
+      window.localStorage.setItem(filterType, window.localStorage.getItem(filterType) + "," + event.target.id);
     }
   });
 }
