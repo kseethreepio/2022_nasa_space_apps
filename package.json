@@ -1,32 +1,32 @@
 {
-    "dependencies": {
-      "@babel/core": "^7.19.3",
-      "d3": "^7.6.1",
-      "d3-cloud": "^1.2.5"
-    },
-    "name": "2022_nasa_space_apps",
-    "version": "1.0.0",
-    "main": "browserify.js",
-    "devDependencies": {
-      "@babel/preset-env": "^7.19.3",
-      "babelify": "^10.0.0"
-    },
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "",
-    "license": "MIT",
-    "description": "",
-    "browserify": {
-      "transform": [
-        [
-          "babelify",
-          {
-            "presets": [
-              "@babel/preset-env"
-            ]
-          }
-        ]
+  "dependencies": {
+    "@babel/core": "^7.19.3",
+    "d3": "^7.6.1",
+    "d3-cloud": "^1.2.5"
+  },
+  "name": "2022_nasa_space_apps",
+  "version": "1.0.0",
+  "main": "browserify.js",
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.3",
+    "babelify": "^10.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "@babel/preset-env"
+          ]
+        }
       ]
-    }
+    ]
   }
+}
