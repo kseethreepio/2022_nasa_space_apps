@@ -29,8 +29,8 @@ function draw(words) {
     .style("font-family", "Impact")
     .attr("text-anchor", "middle")
     .attr("transform", function(d) {
-        //return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
-        return "translate(" + [d.x, d.y] + ")";
+        return "translate(" + [d.x, d.y] + ")rotate(" + 0 + ")";
+        // return "translate(" + [d.x, d.y] + ")";
     })
     .text(function(d) { return d.text; }
   );
