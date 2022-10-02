@@ -6,14 +6,6 @@ var WORDLIST = [
   "training classes",
   "source code",
   "tutorials",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
 ];
 
 function draw(words) {
@@ -24,7 +16,7 @@ function draw(words) {
     .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
     .selectAll("text")
     .data(words)
-    .enter().append("a").attr("href", function(d) { return "./" + d.text; })
+    .enter().append("a").attr("href", function(d) { return "./test"; })
     .append("text")
     .style("font-size", function(d) { return d.size + "px"; })
     .style("font-family", "Impact")
@@ -50,3 +42,15 @@ var layout = d3.layout.cloud()
 ;
 
 layout.start();
+
+var checkboxes = document.querySelectorAll("input");
+for (var i = 0; i < checkboxes.length; i++) {
+  checkboxes[i].addEventListener("click", function(event) {
+    var filterType = event.target.parentElement.parentElement.className;
+    if (window.localStorage.key(filterType) === null) {
+      window.localStorage.setItem(filterType, window.localStorage.getItem(filterType) + "," + event.target.id);
+    } else {
+        window.localStorage.setItem(filterType, event.target.id)
+    }
+  });
+}
