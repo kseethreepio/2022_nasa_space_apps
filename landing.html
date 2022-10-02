@@ -35,19 +35,34 @@
 		<hr>
 		<p>This is the gateway. Use it to find info and training relevant to you.</p>
 		<h2>What is your role?</h2>
-		<select name="role" id="role-select">
-			<option value="beginner">Beginner</option>
-			<option value="expert">Subject Matter Expert</option>
-			<option value="decisionmaker">Decision Maker</option>
-		</select>
+		<fieldset>
+			<div class="checklist"><input value="beginner">General Public</input></div>
+			<div class="checklist"><input value="beginner">Intern</input></div>
+			<div class="checklist"><input value="expert">Subject Matter Expert</input></div>
+			<div class="checklist"><input value="decisionmaker">Decision Maker</input></div>
+			<div class="checklist"><input value="policymaker">Policy Maker</input></div>
+			<div class="checklist"><input value="eoresearcher">EO Researcher</input></div>
+			<div class="checklist"><input value="citizensci">Citizen Scientist</input></div>
+			<div class="checklist"><input value="dataanalyst">Data Analytst</input></div>
+			<div class="checklist"><input value="other">Other</input></div>
+		</fieldset>
 		<br>
 		<br>
 		<span>-or-</span>
 		<h2>What are you looking for?</h2>
 		<fieldset>
-			<div class="checklist"><input type="checkbox" id="topic1" name="topic1">Topic 1</input></div>
-			<div class="checklist"><input type="checkbox" id="topic2" name="topic2">Topic 2</input></div>
-			<div class="checklist"><input type="checkbox" id="topic3" name="topic3">Topic 3</input></div>
+			<div class="checklist"><input type="checkbox" id="capacitybuilding" name="capacitybuilding">Capacity Building</input></div>
+			<div class="checklist"><input type="checkbox" id="disaster" name="disaster">Disaster Readiness</input></div>
+			<div class="checklist"><input type="checkbox" id="ecoforecasting" name="ecoforecasting">Ecological Forecasting</input></div>
+			<div class="checklist"><input type="checkbox" id="health" name="health">Health & Air Quality</input></div>
+			<div class="checklist"><input type="checkbox" id="water" name="water">Water Resources</input></div>
+			<div class="checklist"><input type="checkbox" id="wildfires" name="wildfires">Wildfire Readiness</input></div>
+			<div class="checklist"><input type="checkbox" id="sustaindev" name="sustaindev">Sustainable Development</input></div>
+			<div class="checklist"><input type="checkbox" id="foodsec" name="foodsec">Food Security</input></div>
+			<div class="checklist"><input type="checkbox" id="biodiv" name="biodiv">Biodiversity and Ecosystem Sustainability</input></div>
+			<div class="checklist"><input type="checkbox" id="publichealth" name="publichealth">Public Health</input></div>
+			<div class="checklist"><input type="checkbox" id="climate" name="climate">Climate</input></div>
+			<div class="checklist"><input type="checkbox" id="airquality" name="airquality">Air Quality</input></div>
 		</fieldset>
 		<script src="cloud.js"></script>
 		</main>
