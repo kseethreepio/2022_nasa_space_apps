@@ -1,3 +1,21 @@
+var WORDLIST = [
+  "courses",
+  "data sets and databases",
+  "calendars",
+  "APIs",
+  "training classes",
+  "source code",
+  "tutorials",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+];
+
 function draw(words) {
   d3.select("body").append("svg")
     .attr("width", layout.size()[0])
@@ -20,8 +38,8 @@ function draw(words) {
 
 var layout = d3.layout.cloud()
   .size([500, 500])
-  .words([
-      "Hello", "world", "and", "archie", "and", "plano"].map(function(d) {
+  .words(
+      WORDLIST.map(function(d) {
       return {text: d, size: 10 + Math.random() * 90, test: "haha"};
   }))
   .padding(3)
